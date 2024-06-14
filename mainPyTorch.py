@@ -28,6 +28,8 @@
 
 import scipy.io as sio                     # import scipy.io for .mat file I/
 import numpy as np                         # import numpy
+import seaborn as sns
+
 
 # Implementated based on the PyTorch 
 from memoryPyTorch import MemoryDNN
@@ -45,7 +47,8 @@ def plot_rate(rate_his, rolling_intv=50):
     df = pd.DataFrame(rate_his)
 
 
-    mpl.style.use('seaborn')
+    #mpl.style.use('seaborn')
+    sns.set()
     fig, ax = plt.subplots(figsize=(15, 8))
 #    rolling_intv = 20
 
